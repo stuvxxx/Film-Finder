@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Source+Sans+Pro:wght@600;700&display=swap");
+
+body {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 300px 200px auto;
+  justify-content: center;
+}
+
+header {
+  border: 50px rgb(39, 35, 35);
+  border-style: inset groove;
+  color: rgb(119, 40, 40);
+  background-color: antiquewhite;
+  letter-spacing: 80px;
+  font-size: 75px;
+  padding-top: 30px;
+  font-family: "Rubik Mono One", sans-serif;
+  text-align: center;
+  align-self: center;
+}
+
+nav {
+  margin: 0 50px 50px 50px;
+  display: flex;
+  background-color: rgb(39, 35, 35);
+  color: rgb(255, 255, 255);
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 30px;
+  justify-content: space-around;
+  flex-direction: row;
+  text-transform: uppercase;
+  position: sticky;
+}
+
+.label {
+  text-align: center;
+  width: 200px;
+  line-height: 40px;
+  height: fit-content;
+  align-items: center;
+  align-self: center;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.label:hover {
+  background-color: antiquewhite;
+  color: rgb(39, 35, 35);
+}
+
+.filmcontainer {
+  margin: 0px 100px 0 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 500px;
+  background-color: rgb(39, 35, 35);
+}
+
+.films {
+  padding-top: 50px;
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: column;
+  text-align: center;
+  opacity: 60%;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.films:hover {
+  opacity: 100%;
+  transform: scale(110%);
+}
